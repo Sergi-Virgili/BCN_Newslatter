@@ -3,7 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Register to Our Newslatter</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1>Our NewsLetter</h1>
+      <!-- <p>Subscribe to our newslatter to receive the latest news and updates</p> -->
+      <div class="spinner hidden">
+        <i class="fa fa-spinner fa-pulse fa-2x fa-fw" style="color: #666"></i>
+        <span class="sr-only">Loading...</span>
+      </div>
+      <form method="post" class="form">
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+        <input type="submit" value="Register" />
+      </form>
+    </main>
+    <script defer src="./index.js" type="module"></script>
+  </body>
 </html>
