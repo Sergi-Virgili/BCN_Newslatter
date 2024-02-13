@@ -33,6 +33,6 @@ export async function handler(event, context) {
 
   return {
     statusCode: 200,
-    body: `Email: ${email} Registered`,
+    body: JSON.stringify(`Email: ${email} Registered`),
   };
 }
